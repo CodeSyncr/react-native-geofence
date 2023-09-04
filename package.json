@@ -1,5 +1,5 @@
 {
-  "name": "react-native-geofence",
+  "name": "@brighthustle/react-native-geofence",
   "version": "0.0.1",
   "description": "Geofence Wrapper",
   "main": "lib/commonjs/index",
@@ -114,6 +114,9 @@
       "@release-it/conventional-changelog": {
         "preset": "angular"
       }
+    },
+    "publishConfig": {
+      "access": "public"
     }
   },
   "eslintConfig": {
