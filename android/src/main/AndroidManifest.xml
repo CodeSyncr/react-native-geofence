@@ -1,3 +1,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.geofence">
+
+    <uses-permission  android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission  android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application>
+        <!-- Services -->
+        <service
+            android:name=".services.GeofenceEventJobIntentService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service android:name="com.geofence.services.GeofenceEventHeadlessTaskService" />
+
+        <!-- Receivers -->
+        <receiver
+            android:name=".receivers.GeofenceEventBroadcastReceiver"
+            android:enabled="true" />
+    </application>
 </manifest>

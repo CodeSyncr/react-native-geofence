@@ -6,6 +6,7 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
+import com.facebook.react.bridge.JavaScriptModule;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -18,6 +19,10 @@ public class GeofencePackage implements ReactPackage {
     List<NativeModule> modules = new ArrayList<>();
     modules.add(new GeofenceModule(reactContext));
     return modules;
+  }
+
+  public List<Class<? extends JavaScriptModule>> createJSModules() {
+    return Collections.emptyList();
   }
 
   @NonNull
