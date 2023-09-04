@@ -1,6 +1,6 @@
 {
   "name": "react-native-geofence",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Geofence Wrapper",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
