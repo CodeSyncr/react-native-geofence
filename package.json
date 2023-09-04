@@ -1,6 +1,6 @@
 {
   "name": "@brighthustle/react-native-geofence",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Geofence Wrapper",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -112,12 +112,10 @@
         "preset": "angular"
       }
     }
-    
   },
   "publishConfig": {
-      "access": "public",
-      "registry": "https://registry.npmjs.org/"
-
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "eslintConfig": {
     "root": true,
