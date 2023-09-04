@@ -50,9 +50,6 @@
     "url": "https://github.com/CodeSyncr/react-native-geofence/issues"
   },
   "homepage": "https://github.com/CodeSyncr/react-native-geofence#readme",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.2",
     "@evilmartians/lefthook": "^1.2.2",
@@ -114,10 +111,13 @@
       "@release-it/conventional-changelog": {
         "preset": "angular"
       }
-    },
-    "publishConfig": {
-      "access": "public"
     }
+    
+  },
+  "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org/"
+
   },
   "eslintConfig": {
     "root": true,
